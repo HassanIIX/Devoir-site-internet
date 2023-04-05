@@ -1,4 +1,4 @@
-/* Style the navigation bar */
+/* ___________________ nav ________________ */
 
 
 #recherche {
@@ -15,7 +15,6 @@
 
 }
 
-/* Navbar links */
 #recherche a {
   float: left;
   text-align: center;
@@ -48,19 +47,103 @@
 }
 
 
-/* set correct box model */
+
+
+
+/* #######################
+
+            PETIT COMMENTAIRE ; DES FOIS LA TOUTE PREMIERE PHOTO DU MILIEU NE 
+            S'AFFICHE PAS, JE NE SAIS PAS COMMENT REGLER CE PROBLEME,
+            TOUTE FFOIS SI LE PROBLEME NE S'AFFICHE PAS, MERCI DE NE
+            PAS TENIR COMPTE DE CE MESSAGE.
+
+#########################/
+
+/* _________________ Partie mileu ___________*/
+.imagemilieu {
+  margin-top: -100px;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+  height: 100%;
+}
+
+.imagemilieu img {
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transition: transform 1s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+.imagemilieu:hover img {
+  -webkit-transform: scale3d(1.3, 1.3, 1);
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+.testemileu {
+  position: absolute;
+  top: auto;
+  left: 50%;
+  background-color: #FFFFFF;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 641px;
+  height: 142px;
+
+}
+.testemileu h1 {
+  font-size: 50px;
+  margin: 30px;
+  text-align: start;
+}
+
+.testemileu p{
+  font-size: 20px;
+  text-align: start;
+  margin: 30px;
+}
+.alaune {
+  position: absolute;
+  bottom: 135px;
+  right: 80%;
+  font-size: small;
+  background-color: #0082F8;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  transform: rotate(-2deg);
+}
+
+.zoom2 {
+  padding: 50px;
+  transition: transform .2s;
+  width: 400px;
+  height: 300px;
+  margin-top: 300px;
+}
+
+.zoom2:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+/*_________________ centralisation _________________________*/ 
+
+
+
+
 * {
   box-sizing: border-box;
 }
 
-/* floated container */
+
 .holy-grail-floated-blocks {
   overflow: hidden;
 }
 
-
-
-/* tablet breakpoint */
 @media (min-width:768px) {
   .holy-grail-floated-blocks .right-wrap {
     float: left;
@@ -106,7 +189,6 @@
   }
 }
 
-/* desktop breakpoint */
 @media (min-width:1024px) {
   .holy-grail-floated-blocks .main-wrap {
     right: 25%;
@@ -142,16 +224,15 @@
   }
 }
 
-.boutonbasgauche {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-  background-color: #fff;
-  transition: background-color 0.3s ease;
+
+
+/*_______________________ page gauche ____________________ */ 
+
+
+#couleurincone svg{
+  color: #6a96ff
 }
+
 
 .mon-lien {
   display: inline-block;
@@ -163,6 +244,12 @@
   color: #000;
   background-color: #F4F3F3;
   transition: background-color 0.3s ease;
+}
+
+
+#couleurincone:hover svg {
+  color: #0A3D62;
+
 }
 
 
@@ -186,6 +273,59 @@
 }
 
 
+#carteid {
+  color: black;
+}
+
+#carteid:hover svg {
+  color: #0A3D62;
+}
+
+.boutonbasgauche {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+#travail {
+  color: black;
+}
+
+#travail:hover svg {
+  color: #0A3D62;
+  /* filter: invert(1);*/
+}
+
+
+
+
+/* __________________________ partie gauche _________________*/
+
+.sectiondroite {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.img {
+  margin: 0px;
+
+}
+
+.couleurecriture {
+  color: grey;
+
+}
+
+
+#platforme{
+  color: red;
+}
 
 .Ensavoirdroite {
   display: inline-block;
@@ -209,208 +349,14 @@
   font-size: x-small;
 }
 
-.left-sidebar {
-  margin-bottom: 10px;
-}
 
-.container {
-  margin-bottom: 10px;
-}
-
-.container ul {
-  list-style: none;
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-}
+/*___________________ footer gauche _____________*/ 
 
 
+/* yy les rop butons down etc */ 
 
 
-/* 
-.zoom3{
-  overflow: hidden;
-}
-IL faut utilise sa mais je n'y arrive pas */
-
-.couleurecriture {
-  color: grey;
-
-}
-
-.sectiondroite {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-}
-
-
-
-.img {
-  margin: 0px;
-
-}
-
-#carteid {
-  color: black;
-}
-
-#carteid:hover svg {
-  color: #0A3D62;
-}
-
-#travail {
-  color: black;
-}
-
-#travail:hover svg {
-  color: #0A3D62;
-  /* filter: invert(1);*/
-}
-
-
-
-#platforme{
-  color: red;
-}
-
-#couleurincone svg{
-  color: #6a96ff
-}
-#couleurincone:hover svg {
-  color: #0A3D62;
-
-}
-
-
-
-
-
-
-
-.actualites {
-  display: flex;
-  flex-direction: row;
-  background-color: #071F32;
-  margin-top: 30px;
-
-}
-
-.actualites-text {
-  color: white;
-
-
-}
-
-
-input[type="email"] {
-  width: 350px;
-  padding: 10px;
-  border: none;
-  margin-bottom: 10px;
-}
-
-button[type="submit"] {
-  background-color: #E22C3F;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: white;
-  color: #E22C3F;
-}
-
-.btn2[type="submit"] {
-  background-color: #071F32;
-  color: #E22C3F;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.btn2:hover {
-  background-color: #E22C3F;
-  color: white;
-}
-
-
-.actualites-icons {
-  margin-right: 20px;
-  color: white;
-  cursor: pointer;
-}
-
-
-.actualites-icons i {
-  color: white;
-  font-size: 20px;
-  margin-right: 10px;
-}
-
-.actualites-icons i:hover {
-  color: #E22C3F;
-}
-
-.actualites-text {
-  flex: 1 1 300px;
-}
-
-.dropbtn {
-
-  background-color: rgba(229, 21, 21, 0.466);
-  color: rgb(6, 5, 5);
-  margin-left: 30px;
-  padding: 0 80px;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  margin-left: 20px;
-  padding: 20px;
-
-}
-
-.dropup {
-  position: relative;
-  display: inline-block;
-
-  margin-left: 20px;
-}
-
-
-.dropup-content {
-  display: none;
-  position: absolute;
-  background-color: #F2F2F2;
-  min-width: 160px;
-  bottom: 50px;
-  z-index: 1;
-}
-
-.dropup-content a {
-  color: black;
-  padding: 0 80px;
-  text-decoration: none;
-  display: inline-block;
-
-}
-
-.dropup-content a:hover {
-  background-color: #ccc
-}
-
-.dropup:hover .dropup-content {
-  display: block;
-}
-
-.dropup:hover .dropbtn {
-  background-color: #2980B9;
-}
-
-#bloc {
+#bande {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -418,13 +364,17 @@ button[type="submit"] {
 
 }
 
-#bloc a {
+#bande a {
   font-size: 20px;
   color: black;
   text-decoration: none;
 }
 
-#btn {
+/*  lien-f   */
+
+
+
+#boutontourriste {
   background-color: white;
   color: #E22C3F;
   padding: 10px;
@@ -440,7 +390,7 @@ button[type="submit"] {
 
 }
 
-#btn:hover {
+#boutontourriste:hover {
   background-color: #E22C3F;
   color: white;
   box-shadow: inset 120px 0 0 0 #E22C3F;
@@ -448,7 +398,10 @@ button[type="submit"] {
 }
 
 
-.barrebasdroite a {
+/* class=" justify-content-around"*/ 
+
+
+.barredettenbas a {
   display: inline-block;
   font-size: small;
   gap: 200px;
@@ -457,11 +410,10 @@ button[type="submit"] {
   font-weight: 500;
 }
 
-.barrebasdroite a:hover {
+.barredettenbas a:hover {
   display: inline;
   font-size: small;
   justify-content: space-evenly;
-
   color: #E22C3F;
   text-decoration: none;
   font-weight: 500;
@@ -469,71 +421,76 @@ button[type="submit"] {
 
 
 
+/*________________footer droit _________________*/ 
 
 
-.child {
-  margin-top: -100px;
-  overflow: hidden;
-  position: relative;
-  width: 95  %;
-  height: 100%;
-}
 
-.child img {
-  min-width: 100%;
-  min-height: 100%;
-  -webkit-transition: transform 1s ease-in-out;
-  transition: transform 0.2s ease-in-out;
+.debutfooter {
+  display: flex;
+  flex-direction: row;
+  background-color: #071F32;
+  margin-top: 30px;
 
 }
 
-.child:hover img {
-  -webkit-transform: scale3d(1.3, 1.3, 1);
-  transform: scale3d(1.1, 1.1, 1);
+.actualites-couleur {
+  color: white;
 }
 
-.description {
-  position: absolute;
-  top: auto;
-  left: 50%;
-  background-color: #FFFFFF;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 641px;
-  height: 142px;
 
-}
-.description h1 {
-  font-size: 50px;
-  margin: 30px;
-  text-align: start;
+.actualites-couleur {
+  flex: 1 1 300px;
 }
 
-.description p{
+.sabonner[type="submit"] {
+  background-color: #E22C3F;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+input[type="email"] {
+  width: 350px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+.sabonner:hover {
+  background-color: white;
+  color: #E22C3F;
+}
+
+
+.icons {
+  margin-right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.icons i {
+  color: white;
   font-size: 20px;
-  text-align: start;
-  margin: 30px;
+  margin-right: 10px;
 }
-.link-une {
-  position: absolute;
-  bottom: 135px;
-  right: 80%;
-  font-size: small;
-  background-color: #0082F8;
-  color: #000;
-  padding: 10px 30px;
+
+.icons i:hover {
+  color: #E22C3F;
+}
+
+
+.PARISJECOUTE[type="submit"] {
+  background-color: #071F32;
+  color: #E22C3F;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
   text-decoration: none;
-  transform: rotate(-2deg);
 }
 
-.zoom2 {
-  padding: 50px;
-  transition: transform .2s;
-  width: 400px;
-  height: 300px;
-  margin-top: 300px;
-}
-
-.zoom2:hover {
-  transform: scale(1.1);
+.PARISJECOUTE:hover {
+  background-color: #E22C3F;
+  color: white;
 }
